@@ -1,0 +1,97 @@
+<body class="index-page sidebar-collapse homebg">
+<div class="fenceselect">
+    <div class="fselect-box">
+        <div class="row">
+            <div class="col-2">
+                <div class="fence-color"></div>
+            </div>
+            <div class="col-10 pl-0">
+                <select class="selectpicker fence-selectf m-0" data-style="select-with-transition"
+                    title="Select Club" data-size="7">
+                    <option value="2" selected>Adeniran's Family</option>
+                    <option value="3">Amusement Park</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="map" id="map"></div> -->
+
+    <div class="map-container">
+        <div class="map-frame">
+             <div id="map"></div>
+        </div>
+     </div>
+
+
+<!-- Navtabs -->
+    <!-- Navtabs -->
+    <div class="bg-cut bottom-nav">
+        <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+                <ul class="nav nav-custom nav-tabs" data-tabs="tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="/auth/home">
+                            <img class="img-fluid" src="./assets/img/tyler/nav/home.svg" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/auth/fence">
+                            <img class="img-fluid" src="./assets/img/tyler/nav/hexagon.svg" />
+                        </a>
+                    </li>
+
+                    <li class="nav-item crown-lift">
+                        <a class="nav-link" type="button" data-html="true" data-toggle="popover" data-placement="top"
+                            title=""
+                            data-content="<a href='create-fence.html' class='btn btn-block btn-sm btn-primary'>Create Fence</a> <a href='join-fence.html' class='btn btn-block btn-sm btn-outline-primary'>Join Fence</a>"
+                            data-container="body">
+                            <img class="img-fluid midicon" src="./assets/img/tyler/add-nav.svg" />
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/auth/places">
+                            <img class="img-fluid" src="./assets/img/tyler/nav/map-pin (7).svg" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/auth/profile">s
+                            <img class="img-fluid" src="./assets/img/tyler/nav/user (7).svg" />
+
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="settings.html">
+                            <img class="img-fluid" src="./assets/img/tyler/nav/settings (6).svg" />
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="changePassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title text-bold text-center full-width" id="changePassword">Change Password</h3>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

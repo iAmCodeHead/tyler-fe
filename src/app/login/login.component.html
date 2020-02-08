@@ -1,0 +1,100 @@
+<body class="index-page sidebar-collapse ">
+
+    <div *ngIf="one">
+        <div class="logo-head">
+            <div class="container">
+                <img class="img-fluid mt-5" src="./assets/img/tyler/tyler-box.svg" height="40" />
+            </div>
+        </div>
+    
+        <div class="container">
+            <h3 class="text-bold">Welcome to Tyler</h3>
+            <form class="">
+                <div class="form-group bmd-form-group m">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons">group</i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Mobile Number">
+                    </div>
+                </div>
+                <div class="formbtn">
+                    <a id="link" routerlink="./" (click)="stepTwo()" class="btn btn-primary btn-block">Continue</a>
+                </div>
+            </form>
+        </div> 
+    </div>   
+
+
+
+
+    <div *ngIf="two">
+        <nav class="navbar navbar-expand-lg bg-theme br-0">
+            <div class="container">
+                <div class="navbar-translate text-white">
+                    <a routerlink="./" (click)="stepOne()" class="material-icons ml-2 my-2 mr-3 text-white">arrow_back_ios</a>
+                    <a class="navbar-brand" href="#0">Complete Profile</a>
+                </div>
+            </div>
+        </nav>
+    
+    
+        <div class="container">
+    
+            <form class="mx-2">
+                <p>Kindly Complete the form with your <br>accurate Details</p>
+                <div class="form-group bmd-form-group m">
+                    <input type="text" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="form-group bmd-form-group m">
+                    <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group bmd-form-group m">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group bmd-form-group m">
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+                </div>
+                <div class="formbtn">
+                    <a id="link" routerlink="./" (click)="stepThree()" class="btn btn-primary btn-block">Continue</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div *ngIf="three">
+        <nav class="navbar navbar-expand-lg bg-theme br-0">
+            <div class="container">
+                <div class="navbar-translate text-white">
+                    <a routerlink="./" (click)="stepTwo()" class="material-icons ml-2 my-2 mr-3 text-white">arrow_back_ios</a>
+                    <a class="navbar-brand" href="#0">Profile Picture</a>
+                </div>
+            </div>
+        </nav>
+    
+    
+        <div class="container">
+    
+            <form class="mx-2">
+                <div class="text-center">
+                    <p>Hi, Horpey!</p>
+                    <h3 class="font-weight-bold">Upload Profile Picture</h3>
+                    <div class="upload-widget">
+                        <h4 class="uploadwid">
+                            <span class="material-icons">camera_alt</span>
+                        </h4>
+                        <p class="">Click to Upload Picture</p>
+                    </div>
+                </div>
+                <div class="formbtn">
+                    <a routerLink="home" class="btn btn-primary btn-block">Continue</a>
+                </div>
+            </form>
+        </div>
+    
+    </div>
+
+
+</body>
